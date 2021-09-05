@@ -40,7 +40,7 @@ function optimizedPairSum($k, $array)
     return "Doesn't exist\n";
 }
 
-//    o(1)
+//   time and space complexity o(n)
 function optimizedHash($k, $array){
         $visited = [];
         foreach ($array as $element){
