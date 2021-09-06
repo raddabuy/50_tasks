@@ -3,7 +3,7 @@
 $array = [1,2,3,4,1,2,5,6,7,4,6];
 
 //print_r(removeDuplicatesSimple($array));
-//print_r(removeDuplicatesBrute($array));
+//print_r(removeDuplicatesBruteForce($array));
 //print_r(sortArraySolution($array));
 print_r(hashOptimized($array));
 
@@ -11,7 +11,8 @@ function removeDuplicatesSimple($array){
     return array_unique($array);
 }
 
-function removeDuplicatesBrute($array){
+//brute force - полный перебор
+function removeDuplicatesBruteForce($array){
     $uniqueArray = [];
     foreach ($array as $element){
         if(!in_array($element, $uniqueArray)){
